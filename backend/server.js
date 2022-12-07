@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 const Task = require("./models/taskModel");
 const taskRoutes = require("./routes/taskRoute");
+const cors = require("cors");
 
 const app = express();
 
@@ -13,6 +14,7 @@ const app = express();
 //MIddleare
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 app.use(taskRoutes);
 
 //Routes
