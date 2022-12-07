@@ -12,7 +12,7 @@ const TaskForm = ({ createTask, name, handleInputChange }) => {
         />
         <button
           type="submit"
-          className="bg-purple-700 p-2 border border-purple-800 w-20 text-white"
+          className="bg-purple-700 p-2 border border-purple-800 w-20 hover:bg-purple-800 text-white"
         >
           Add
         </button>

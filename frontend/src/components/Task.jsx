@@ -1,11 +1,11 @@
 import { FaEdit, FaCheckDouble, FaTrashAlt } from "react-icons/fa";
 
-const Task = () => {
+const Task = ({ task, index }) => {
   return (
     <div className="mt-2 mb-2 p-4 flex justify-between items-center bg-slate-100 border-l-4 border-orange-600">
       <p>
-        <span className="font-bold pr-2">1.</span>
-        Task 1
+        <span className="font-bold pr-2">{index + 1}.</span>
+        {task.name}
       </p>
       <div className="task-icons flex gap-4 items-center">
         <FaCheckDouble className="text-green-600 hover:text-green-700 cursor-pointer" />{" "}
